@@ -11,7 +11,7 @@ function showContent(){
     <!-- lyspæra -->
     <div class ="${bulb}"></div>
     <div class ="socket"></div>
-    <div class = "switch" onclick="switchLight()"> ${lightSwitch} </div>
+    <div style="color: white;" onclick="switchLight()"> ${lightSwitch}lysbryter</div>
     <audio autoplay src="sound/klikklakk.wav"></audio>
     `;
     document.body.style.backgroundColor = room;
