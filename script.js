@@ -12,9 +12,12 @@ function showContent(){
     <div class ="${bulb}"></div>
     <div class ="socket"></div>
     <div class = "switch" onclick="switchLight()"> ${lightSwitch} </div>
+    <audio autoplay src="sound/klikklakk.wav"></audio>
     `;
     document.body.style.backgroundColor = room;
+
 }
+
 //controller
 function switchLight(){
     if(illumination == 'off'){
@@ -28,5 +31,6 @@ function switchLight(){
         illumination = 'off'
         lightSwitch = '<img src="img/off.png"/>'
     }
+
     showContent();
 }
